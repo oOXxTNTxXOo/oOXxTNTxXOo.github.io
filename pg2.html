@@ -2,11 +2,83 @@
 <html>
     <head>
         <title>The game of Jesus vs Satan</title>
+        <link href="spinny.css" type="text/css" rel="stylesheet"/>
+        
+        <script>
+            function getFortune() {
+                // create a list of random fortunes
+                const fortunes = [
+                    "A pleasant surprise is waiting for you.",
+                    "Adventure awaits you around the next corner.",
+                    "Your hard work will pay off today.",
+                    "You will find a hidden treasure today.",
+                    "Your creativity will shine bright today."
+                ];
+                
+                // select a random value from the `fortunes` array
+                const randomIndex = Math.floor(Math.random() * fortunes.length);
+                
+                // post an alert that displays the random fortune
+                alert(fortunes[randomIndex]);
+            }
+
+            // Function to change the background color
+            function cbc() {
+                const colors = ['#ff9999', '#99ff99', '#9999ff', '#ffff99'];
+                const randomColor = colors[Math.floor(Math.random() * colors.length)];
+                document.body.style.backgroundColor = randomColor;
+            }
+            // Function to display a welcome message
+            function dwm() {
+                const name = prompt("What's your name?");
+                if (name) {
+                    alert(`Welcome to my homepage, ${name}!`);
+                }
+            }
+            function playBackgroundMusic() {
+            var audio = new Audio('VineBoom.mp3');
+            audio.loop = true;
+            audio.play();
+            }
+
+            function typeEffect(element, text, speed = 50) {
+                // create a counter to iterate over the characters in `text`
+                let i = 0;
+                
+                // create a function that executes every `speed` microseconds
+                const timer = setInterval(() => {
+                    // while the counter is less than the length of the `text` string
+                    if (i < text.length) {
+                        // update the contents of the HTML `element` by adding the next character in the `text` string to it
+                        element.innerHTML += text.charAt(i);
+                        i++;
+                    } else {
+                        // when finished, stop the loop
+                        clearInterval(timer);
+                    }
+                }, speed);
+            }
+
+            // Add event listeners when the page loads
+            window.onload = function() {
+                dwm();  
+                cbc();
+                playBackgroundMusic();
+                // get the target HTML element
+                const element = document.getElementById('typing-text');
+                // execute the typeEffect function with the element and a message
+                typeEffect(element, "Welcome to my awesome website!");
+            }
+        </script>
     </head>
 
     <body>
+        <div><button onclick="cbc()" class="card">Change Background Color</button></div>
+        <div><button onclick="getFortune()">Get Your Fortune</button></div>
+        <div><p id="typing-text"></p></div>
+
         <p>Hi? Satan is losing.</p>
-        <a href="index.html"><p>click to watch the game </p></a>
+        <a href="index.html"><p>click to go back</p></a>
 
         <UL>
             <li>Jesus tea1m</Li>

@@ -27,8 +27,19 @@
             border-radius: 5.5px;
             color: magenta;
         }
-
+        /* set the background color to dark gray and text color to white */
+        .dark-mode {
+            background-color: #333;
+            color: #fff;
+        } 
     </style>
+
+    <script> 
+        function toggleDarkMode() {
+                // add the `dark-mode` class to your `<body>` tag
+                document.body.classList.toggle('dark-mode');
+            }   
+    </script> 
 </head>
 <body>
     <h1 class="letter">Like and Subscribe</h1>
@@ -40,18 +51,8 @@
     <div id="header">how was the game?</div>
     <a class="gamer">"Nah I'd Win"</a>
     
+    <div class="card"><button onclick="toggleDarkMode()">Toggle Dark Mode</button></div>
     
-    <div class="card">
-        <div>
-        </div>
-        </div>
-
-
-
-
-
-
-
 </body>
 
 </html>
