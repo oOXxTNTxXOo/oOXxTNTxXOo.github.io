@@ -64,3 +64,26 @@
         fill: transparent;
     }
 }
+
+
+#highlight path:nth-child(1){
+    stroke-dasharray: 1;
+    stroke-dashoffset: 1;
+    stroke: blue;
+    animation: inner-fill 5s ease forwards 0.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes inner-fill {
+    10%{
+        stroke-dashoffset: 0;
+        fill: transparent;
+    }
+    40%{
+        fill: cyan;
+    }
+    90%{
+        stroke-dashoffset: 3709.3;
+        fill: transparent;
+    }
+}
