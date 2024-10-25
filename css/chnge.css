@@ -1,0 +1,66 @@
+#logo path:nth-child(1){
+    stroke-dasharray: 2442;
+    stroke-dashoffset: 2442;
+    stroke: red;
+    animation: shape_1 5s ease backwards 0.5s;
+    animation-iteration-count: infinite;
+}
+
+#logo path:nth-child(2){
+    stroke-dasharray: 3358.3;
+    stroke-dashoffset: 3358.3;
+    stroke: rgb(195, 92, 250);
+    animation: shape_2 5s ease forwards 0.5s infinite;
+}
+
+#logo path:nth-child(3){
+    stroke-dasharray: 3709.3;
+    stroke-dashoffset: 3709.3;
+    stroke: greenyellow;
+    animation: shape_3 5s ease forwards 0.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shape_1 {
+    10%{
+        stroke-dashoffset: 0;
+        fill: transparent;
+    }
+    40%{
+        fill: lightcoral;
+    }
+    90%{
+        stroke-dashoffset: 2442;
+        fill: transparent;
+    }
+}
+
+
+@keyframes shape_2 {
+    10%{
+        stroke-dashoffset: 0;
+        fill: transparent;
+    }
+    40%{
+        fill: violet;
+    }
+    90%{
+        stroke-dashoffset: 3358.3;
+        fill: transparent;
+    }
+}
+
+
+@keyframes shape_3 {
+    10%{
+        stroke-dashoffset: 0;
+        fill: transparent;
+    }
+    40%{
+        fill: lightgreen;
+    }
+    90%{
+        stroke-dashoffset: 3709.3;
+        fill: transparent;
+    }
+}
