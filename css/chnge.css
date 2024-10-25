@@ -67,8 +67,8 @@
 
 
 #highlight path:nth-child(1){
-    stroke-dasharray: 1;
-    stroke-dashoffset: 1;
+    stroke-dasharray: 550;
+    stroke-dashoffset: 550;
     stroke: blue;
     animation: inner-fill 5s ease forwards 0.5s;
     animation-iteration-count: infinite;
@@ -83,7 +83,7 @@
         fill: cyan;
     }
     90%{
-        stroke-dashoffset: 3709.3;
+        stroke-dashoffset: 550;
         fill: transparent;
     }
 }
