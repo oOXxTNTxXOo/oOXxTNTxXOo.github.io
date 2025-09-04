@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Blogs</title>
+        <style>
+         body{
+            color: aliceblue; /*tested inheritence*/
+            background: #000;
+            font-family: op
+        }
+        p{
+            color:rgb(222, 222, 91);
+            margin: .5px;
+        }
+        @font-face {font-family: Op; src: url(one-piece-manga/Op.ttf);}
+        .letter{
+            color: red;
+            padding: 6px;
+        }
+        #header{
+            color: salmon;
+        }
+        .gamer{
+            border-style: ridge;
+            border-color: rgb(0, 213, 255);
+            border-radius: 5.5px;
+            color: magenta;
+        }
+        /* set the background color to dark gray and text color to white */
+        .dark-mode {
+            background-color: #333;
+            color: #fff;
+        } 
+        </style>
+        <script> 
+            function toggleDarkMode() {
+                    // add the `dark-mode` class to your `<body>` tag
+                    document.body.classList.toggle('dark-mode');
+                }   
+        </script> 
+        <link rel="stylesheet" href="css/chnge.css">
+    </head>
+    <boby>
+        <div>
+        <h1 class="letter">My Blogs</h1>
+        <h1 class="letter">Welcome to my blog page! Here you'll find my latest thoughts and updates.</h1>
+        </div>
+
+        <div class="card">
+            <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+        </div>
+    </boby>
+
+</html>
